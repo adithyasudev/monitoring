@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+    <style>
+      .parent {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+      }
+
+      #container {
+        height: 150px;
+        width: 350px;
+        border: 5px solid;
+        text-align: center;
+      }
+      #btn {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body class="parent">
+    <div id="container">
+      <h1 style="font-size: 35px">File Upload</h1>
+      <form action="/files/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required />
+        <button id="btn" type="submit">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>
